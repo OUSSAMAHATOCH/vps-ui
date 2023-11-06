@@ -1,0 +1,147 @@
+/* Custom Navbar Styles */
+.navbar {
+    background-color: #f6f6f7; /* Light gray background color */
+    margin-bottom: 20px; /* Add margin at the bottom to create space between navbar and content */
+  }
+
+  .navbar-brand, .navbar-nav .nav-link {
+    color: #613fe5; /* Purple text color */
+  }
+
+  .nav-item.active .nav-link {
+    color: #120e16; /* Dark purple text color for active link */
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: #b5b5b5; /* Gray border color for the mobile menu toggle button */
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-color: #b5b5b5; /* Gray color for the mobile menu toggle icon */
+  }
+
+  .special-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .content {
+    background: linear-gradient(to right, #613fe5 60%, #15233d);
+    margin: 0;
+    height: 60vh;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin at the top to create space between navbar and content */
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    color: #f6f6f7; /* Purple heading color */
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #f6f6f7; /* Dark purple text color */
+    line-height: 1.6;
+    width: 100vh;
+    font-size: large;
+  }
+  .pack {
+    border: 2px solid #120e16; /* Violet foncé bordure */
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex; /* Utilisation de flexbox */
+      flex-direction: column; /* Aligner les éléments verticalement */
+      align-items: center; /* Centrer horizontalement */
+      text-align: center; /* Centrer le texte */
+  }
+
+  .pack h2 {
+    color: #613fe5; /* Pourpre titre couleur */
+    font-size: 24px;
+  }
+
+  .pack p {
+    color: #120e16; /* Violet foncé texte couleur */
+  }
+
+  .pack-price {
+    color: #613fe5; /* Pourpre prix couleur */
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .pack-features {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .pack-features li {
+    margin-bottom: 10px;
+    color: #120e16; /* Violet foncé liste couleur */
+  }
+
+  .pack-cta {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .pack-button {
+    background-color: #613fe5; /* Pourpre bouton couleur */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .pack-button:hover {
+    background-color: #120e16; /* Violet foncé couleur au survol */
+  }
+  .icon-item {
+    background-color: #f6f6f7;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    margin-bottom: 20px;
+  
+  }
+
+  .icon-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .icon-item img {
+    max-width: 100px;
+      height: auto;
+      margin: 0 auto;
+    
+  }
+
+  .icon-item h3 {
+    margin-top: 20px;
+    color: #613fe5;
+    font-size: 24px;
+  }
+
+  .icon-item p {
+    margin-top: 10px;
+      color: #120e16;
+      line-height: 1.6;
+      text-align: left;
+      width: 330px;
+  }
+  .row {
+    margin-bottom: 30px;
+  }
+  
+  

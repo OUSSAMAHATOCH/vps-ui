@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudNest - Paiement</title>
+  <!-- Inclure les fichiers CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">CloudNest</a>
+      <!-- Ajouter des liens vers d'autres pages si nécessaire -->
+    </div>
+  </nav>
+
+  <!-- Formulaire de paiement -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Paiement pour le pack: <span id="selectedPack"></span></h5>
+            <!-- Ajouter le formulaire de paiement ici -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inclure les fichiers JS de Bootstrap (jQuery est requis) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Récupérer le nom du pack depuis l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const pack = urlParams.get('pack');
+    if (pack === 'basic') {
+      document.getElementById('selectedPack').textContent = 'Pack Basic';
+    } else if (pack === 'standard') {
+      document.getElementById('selectedPack').textContent = 'Pack Standard';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background: linear-gradient(to right, #120e16 50%, #613fe5);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-form-container {
+      background-color: #f6f6f7;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form {
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+      color: #613fe5;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #613fe5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-info {
+      color: white;
+      text-align: center;
+    }
+
+    .contact-info i {
+      font-size: 30px;
+      margin-bottom: 10px;
+      display: block; /* For vertical alignment */
+    }
+
+    .contact-info p {
+      margin-top: 30px;
+      margin-bottom: 50px ;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contact-form-container">
+          <h2 class="mb-4">Contact Us</h2>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Enter your name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Enter your email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Contact number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 contact-info">
+        <i class="fas fa-map-marker-alt fa-3x"></i>
+        <p> lycee bno tachafin, attaouia, morroco</p>
+        <i class="fas fa-phone-alt fa-3x"></i>
+        <p>Contact: +212 6 25 28 91 20</p>
+        <i class="fas fa-envelope fa-3x"></i>
+        <p>Email: oussama.hatoch200@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

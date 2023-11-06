@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Page</title>
+  <!-- Inclure les fichiers CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f6f6f7; /* Light gray background color */
+    }
+
+    .login-container {
+      margin-top: 50px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #120e16; /* Purple box background color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, .btn {
+      color: #613fe5; /* Dark purple heading and button color */
+    }
+
+    label, p {
+      color: #b5b5b5; /* Gray label and link color */
+    }
+
+    .error-message {
+      color: #ff0000; /* Red error message color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="login-container">
+          <h1 class="text-center">Sign In</h1>
+          <form onsubmit="return checkPasswords()">
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+              <p class="error-message" id="errorText"></p>
+            </div>
+            <button type="submit" class="btn btn-block">Sign Up</button>
+          </form>
+          <p class="text-center">Already have an account? <a href="#">Log In</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inclure les fichiers JS de Bootstrap (jQuery est requis) -->
+  <script src="./indexx.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
+</body>
+</html>
